@@ -4,3 +4,5 @@ dplyr
 tidyr
 DT
 shinythemes
+readxl
+writexl
