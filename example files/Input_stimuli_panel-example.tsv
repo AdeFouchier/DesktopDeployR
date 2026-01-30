@@ -1,0 +1,27 @@
+stimulus_type	stimulus	quantity_ug
+control	empty	0
+control	paper	0
+control	paraffin oil	0
+control	ethyl hexanoate	1
+control	ethyl acetate	10
+control	sulcatone	10
+test	hexanal	0.1
+test	hexanal	1
+test	hexanal	10
+test	hexanal	100
+test	Z3-hexenyl acetate	1
+test	Z3-hexenyl acetate	10
+test	Z3-hexenyl acetate	100
+test	Z9E11-14Ac	1
+test	Z9E11-14Ac	10
+test	Z9E11-14Ac	100
+test	1-octen-3-ol	10
+test	1-octen-3-ol	100
+test	isoamyl acetate	0.1
+test	isoamyl acetate	1
+test	isoamyl acetate	10
+terminal	henkel100	0.01
+terminal	henkel100	0.1
+terminal	henkel100	1
+terminal	henkel100	10
+terminal	henkel100	100
