@@ -33,23 +33,24 @@ fluidPage(
         )
       ),
       
-      hr(),
-      
-      h3("1. Control Stimuli"),
-      uiOutput("control_inputs"),
-      actionButton("add_control", "Add Control", icon = icon("plus"), class = "btn-sm"),
-      
-      hr(),
-      
-      h3("2. Test Panel Stimuli"),
-      uiOutput("test_inputs"),
-      actionButton("add_test", "Add Test Dose", icon = icon("plus"), class = "btn-sm"),
-      
-      hr(),
-      
-      h3("3. Terminal Stimuli"),
-      uiOutput("terminal_inputs"),
-      actionButton("add_terminal", "Add Terminal", icon = icon("plus"), class = "btn-sm")
+      tabPanel("Input Stimuli",
+               br(),
+               wellPanel(
+                 h4("1. Control Stimuli"),
+                 uiOutput("control_inputs"),
+                 actionButton("add_control", "Add Control", icon = icon("plus"), class = "btn-info btn-xs")
+               ),
+               wellPanel(
+                 h4("2. Test Stimuli"),
+                 uiOutput("test_inputs"),
+                 actionButton("add_test", "Add Test", icon = icon("plus"), class = "btn-info btn-xs")
+               ),
+               wellPanel(
+                 h4("3. Terminal Stimuli"),
+                 uiOutput("terminal_inputs"),
+                 actionButton("add_terminal", "Add Terminal", icon = icon("plus"), class = "btn-info btn-xs")
+               )
+      )
     ),
     
     # --- Main Panel: Display Results (1/2 Width) --- ####
