@@ -208,4 +208,12 @@ function(input, output, session) {
     paste0("Total: ", nrow(d), "\nUnique: ", length(unique(d$stimulus)), "\nCtrl: ", sum(d$Category == "Control"), 
            "\nTest: ", sum(d$Category == "Test"), "\nTerm: ", sum(d$Category == "Terminal"))
   })
+  
+  # Add this inside the server function at the very bottom
+session$onSessionEnded(function() {
+  stopApp()
+  q("no")
+})
+
 }
+
